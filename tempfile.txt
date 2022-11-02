@@ -1,0 +1,3 @@
+superuser account: 
+email: gupta.anshuman20@gmail.com
+password: django_super09
