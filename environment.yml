@@ -23,4 +23,4 @@ dependencies:
   - wincertstore=0.2=py310haa95532_2
   - xz=5.2.5=h8cc25b3_1
   - zlib=1.2.12=h8cc25b3_2
-prefix: L:\Anaconda3\envs\django
+prefix: F:\miniconda3\envs\django
