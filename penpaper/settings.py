@@ -37,7 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sessions',
-    'apps.accounts'
+    'rest_framework',
+    'apps.accounts',
+    'apps.store'
+
 ]
 
 MIDDLEWARE = [
@@ -52,6 +55,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'penpaper.urls'
 AUTH_USER_MODEL = 'accounts.User'
+MEDIA_ROOT = 'media/'
 
 TEMPLATES = [
     {

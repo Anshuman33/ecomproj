@@ -8,8 +8,8 @@ class User(AbstractUser):
     email = models.EmailField(unique = True)
     name = models.CharField(max_length = 100, null=False, blank=False)
     phone = models.CharField(unique = True, max_length=10)
-    is_buyer = models.BooleanField(default = True)
-    is_seller = models.BooleanField(default = False)
+    is_buyer = models.BooleanField(null = False, default = True)
+    is_seller = models.BooleanField(null = False, default = False)
     address = models.TextField(null = True, blank = True)
     city = models.CharField(max_length = 40,null = True, blank = True)
     state = models.CharField(max_length = 40, null = True, blank = True)
@@ -20,12 +20,13 @@ class User(AbstractUser):
     
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
-    
+
 class Buyer(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, primary_key=True)
     is_subscribed = models.BooleanField(default = False)
     
 class Seller(models.Model):
     user = models.OneToOneField(User, on_delete = models.CASCADE, primary_key=True)
+
     
     

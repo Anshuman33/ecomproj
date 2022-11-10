@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Paper",
+        "features": [
+            {
+                "feature": "size"
+            },
+            {
+                "feature": "color"
+            },
+            {
+                "feature": "rule-type"
+            },
+            {
+                "feature": "paper-finish"
+            }
+        ]
+    },
+    {
+        "name": "Pencil",
+        "features": [
+            {
+                "feature": "shape"
+            },
+            {
+                "feature": "pack-count"
+            }
+        ]
+    },
+    {
+        "name": "Mechanical Pencil",
+        "features": [
+            {
+                "feature": "body-color"
+            },
+            {
+                "feature": "body-material"
+            },
+            {
+                "feature": "pack-count"
+            }
+        ]
+    }
+]
